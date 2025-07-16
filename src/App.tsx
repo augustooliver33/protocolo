@@ -50,8 +50,8 @@ function App() {
       <section className="pt-20 md:pt-24 pb-8 md:pb-12 bg-gradient-to-b from-green-50 to-white min-h-screen flex flex-col justify-center">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-800 mb-8 md:mb-10 leading-tight font-playfair tracking-tight">
-            Você sente dores nas<br className="hidden sm:block" />
-            <span className="block mt-1 sm:mt-2">articulações?</span><br />
+            Você sente dores no JOELHO ao andar ou na<br className="hidden sm:block" />
+            <span className="block mt-1 sm:mt-2">COLUNA ao se abaixar?</span><br />
             <span className="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent drop-shadow-sm block mt-1 sm:mt-2">
               Isso pode NÃO ser culpa<br className="hidden sm:block" />
               <span className="block mt-1 sm:mt-2 text-red-600 bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-md">
