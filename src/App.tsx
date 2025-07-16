@@ -51,16 +51,16 @@ function App() {
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-800 mb-8 md:mb-10 leading-tight font-playfair tracking-tight">
             Você sente dores nas<br className="hidden sm:block" />
-            <span className="block mt-2 md:mt-3">articulações?</span><br />
-            <span className="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent drop-shadow-sm block mt-2 md:mt-3">
+            <span className="block mt-1 sm:mt-2">articulações?</span><br />
+            <span className="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent drop-shadow-sm block mt-1 sm:mt-2">
               Isso pode NÃO ser culpa<br className="hidden sm:block" />
-              <span className="block mt-2 md:mt-3 text-red-600 bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl drop-shadow-md">
+              <span className="block mt-1 sm:mt-2 text-red-600 bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-md">
                 da sua idade.
               </span>
             </span>
           </h1>
           
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed px-2 font-medium">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-2 font-medium">
             Descubra o protocolo caseiro que está devolvendo a liberdade de milhares de brasileiros, 
             <strong className="text-green-600 font-bold"> sem remédios caros nem efeitos colaterais.</strong>
           </p>
@@ -78,7 +78,7 @@ function App() {
             <div className="px-4">
               <button 
                 onClick={scrollToCheckout}
-                className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-10 sm:px-16 py-5 sm:py-6 rounded-full text-xl sm:text-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 max-w-md mx-auto block border-2 border-green-500"
+                className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full text-lg sm:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 max-w-sm mx-auto block border-2 border-green-500"
               >
                 SIM, QUERO ALÍVIO IMEDIATO!
               </button>
