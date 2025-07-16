@@ -80,7 +80,7 @@ function App() {
                 onClick={scrollToCheckout}
                 className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-10 sm:px-16 py-5 sm:py-6 rounded-full text-xl sm:text-2xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 max-w-md mx-auto block border-2 border-green-500"
               >
-                🎯 Quero Começar Agora
+                SIM, QUERO ALÍVIO IMEDIATO!
               </button>
             </div>
           )}
