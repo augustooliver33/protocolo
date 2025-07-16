@@ -20,6 +20,8 @@ function App() {
       }
     };
   }, []);
+  
+  const [utmParams, setUtmParams] = useState('');
 
   // Timer effect
   React.useEffect(() => {
@@ -32,6 +34,41 @@ function App() {
       setShowButton(true);
     }
   }, [timeLeft]);
+
+   // Capturar parâmetros UTM na inicialização
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmParameters = [];
+    
+    // Lista de parâmetros UTM e outros parâmetros de tracking
+    const trackingParams = [
+      'utm_source',
+      'utm_medium', 
+      'utm_campaign',
+      'utm_term',
+      'utm_content',
+      'click_id',
+      'fbclid',
+      'gclid',
+      'ttclid'
+    ];
+    
+    trackingParams.forEach(param => {
+      const value = urlParams.get(param);
+      if (value) {
+        utmParameters.push(`${param}=${encodeURIComponent(value)}`);
+      }
+    });
+    
+    if (utmParameters.length > 0) {
+      setUtmParams('&' + utmParameters.join('&'));
+    }
+  }, []);
+
+  // Função para adicionar UTMs aos links de checkout
+  const addUtmToCheckoutUrl = (baseUrl: string) => {
+    return baseUrl + utmParams;
+  };
 
   const scrollToCheckout = () => {
     window.location.href = 'https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba';
