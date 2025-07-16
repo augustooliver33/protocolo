@@ -34,7 +34,7 @@ function App() {
   }, [timeLeft]);
 
   const scrollToCheckout = () => {
-    window.open('https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba', '_blank');
+    window.location.href = 'https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba';
   };
 
   return (
