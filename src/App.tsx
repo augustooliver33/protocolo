@@ -71,28 +71,11 @@ function App() {
   };
 
   const scrollToCheckout = () => {
-    window.location.href = 'https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba';
+    window.location.href = getCheckoutUrl("https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba");
   };
 
   return (
-    <div className="min-h-screen bg-white font-inter">
-      {/* Header Fixo */}
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 py-3 md:py-4">
-        <div className="container mx-auto px-4 flex justify-center items-center">
-          <Logo />
-        </div>
-      </header>
-
-      {/* Hero Section com VSL */}
-      <section className="pt-20 md:pt-24 pb-8 md:pb-12 bg-gradient-to-b from-green-50 to-white min-h-screen flex flex-col justify-center">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-800 mb-8 md:mb-10 leading-tight font-playfair tracking-tight">
-            Você sente dores no JOELHO ao andar ou na<br className="hidden sm:block" />
-            <span className="block mt-1 sm:mt-2">COLUNA ao se abaixar?</span><br />
-            <span className="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent drop-shadow-sm block mt-1 sm:mt-2">
-              Isso pode NÃO ser culpa<br className="hidden sm:block" />
-              <span className="block mt-1 sm:mt-2 text-red-600 bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-md">
-                da sua idade.
+    return baseUrl + utmParams;
               </span>
             </span>
           </h1>
