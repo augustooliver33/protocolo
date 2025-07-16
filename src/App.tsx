@@ -66,7 +66,7 @@ function App() {
           </p>
 
           {/* VSL Player */}
-          <div className="max-w-sm mx-auto mb-10 md:mb-12" id="vsl-container">
+          <div className="max-w-xs mx-auto mb-8 md:mb-10" id="vsl-container">
             <div 
               dangerouslySetInnerHTML={{
                 __html: `<vturb-smartplayer id="vid-6877d2e30fe8209acf4cca58" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>`
