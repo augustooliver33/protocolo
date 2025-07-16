@@ -75,7 +75,26 @@ function App() {
   };
 
   return (
-    return baseUrl + utmParams;
+    <div className="min-h-screen bg-white flex flex-col">
+      {/* Header */}
+      <header className="bg-white shadow-sm py-4 md:py-6">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center">
+            <Logo />
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <section className="flex-1 py-12 md:py-16 lg:py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-800 mb-8 md:mb-10 leading-tight font-playfair tracking-tight">
+            Você sente dores nas<br className="hidden sm:block" />
+            <span className="block mt-1 sm:mt-2">articulações?</span><br />
+            <span className="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent drop-shadow-sm block mt-1 sm:mt-2">
+              Isso pode NÃO ser culpa<br className="hidden sm:block" />
+              <span className="block mt-1 sm:mt-2 text-red-600 bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-md">
+                da sua idade.
               </span>
             </span>
           </h1>
@@ -86,7 +105,7 @@ function App() {
           </p>
 
           {/* VSL Player */}
-          <div className="max-w-xs mx-auto mb-8 md:mb-10" id="vsl-container">
+          <div className="max-w-xs mx-auto mb-6 md:mb-8" id="vsl-container">
             <div 
               dangerouslySetInnerHTML={{
                 __html: `<vturb-smartplayer id="vid-6877d2e30fe8209acf4cca58" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>`
@@ -124,6 +143,7 @@ function App() {
         </div>
       </footer>
 
+    </div>
     </div>
   );
 }
