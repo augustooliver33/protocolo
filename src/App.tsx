@@ -34,7 +34,7 @@ function App() {
   }, [timeLeft]);
 
   const scrollToCheckout = () => {
-    window.location.href = 'https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba';
+    // O redirecionamento será feito pelo link com classe link-de-compra
   };
 
   return (
@@ -76,12 +76,12 @@ function App() {
 
           {showButton && (
             <div className="px-4">
-              <button 
-                onClick={scrollToCheckout}
-                className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full text-lg sm:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 max-w-sm mx-auto block border-2 border-green-500"
+              <a 
+                href="https://pay.kirvano.com/51c9da2f-ca9e-4fa4-ae34-f0e646202aba"
+                className="link-de-compra w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full text-lg sm:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 max-w-sm mx-auto block border-2 border-green-500 text-center no-underline"
               >
                 SIM, QUERO ALÍVIO IMEDIATO!
-              </button>
+              </a>
             </div>
           )}
         </div>

@@ -10,6 +10,37 @@
         data-token="81ba3b2d-f793-40f6-9f7c-829878487431"
         data-click-id-param="click_id">
     </script>
+    <script>
+      function capturarParametrosUtm() {
+        const chavesDeRastreamento = [
+          'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 
+          'utm_content', 'click_id', 'fbclid', 'gclid'
+        ];
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramsEncontrados = new URLSearchParams();
+        chavesDeRastreamento.forEach(chave => {
+          const valor = urlParams.get(chave);
+          if (valor) {
+            paramsEncontrados.append(chave, valor);
+          }
+        });
+        return paramsEncontrados.toString();
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const parametrosUtm = capturarParametrosUtm();
+        if (parametrosUtm) {
+          const linksDeCompra = document.querySelectorAll('.link-de-compra');
+          linksDeCompra.forEach(link => {
+            if (link.href.includes('?')) {
+              link.href += '&' + parametrosUtm;
+            } else {
+              link.href += '?' + parametrosUtm;
+            }
+          });
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
